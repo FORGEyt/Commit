@@ -42,7 +42,7 @@
                 &::after{
                     content:'';
                     width: 1px;
-                    height: 100%;
+                    height: calc(100% + 16px);
                     position: absolute;
                     top: -16px;
                     left: 0;
@@ -52,8 +52,45 @@
         }
     }
     &__item{
+        position: relative;
+        &:before{
+            content: "";
+            top: 73px;;
+            height: 1px;
+            width: 45px;
+            position: absolute;
+            background-color: black;
+        }
         &-head{
-            padding: 0 0 0 100px;
+            position: relative;
+            padding: 45px 0 0 100px;
+            h4{
+                margin-bottom: 0;
+            }
+        }
+        &-body{
+            padding-left: 43px;
+            padding-top: 12px;
+        }
+        &-icon{
+            position: absolute;
+            top: 58px;
+            left: 45px;
+            @include before_circle;
+            img{
+                position: absolute;
+                left: 17px;
+                top: 14px;
+            }
+        }
+        &-location{
+            font-size: 12px;
+            line-height: 18px;
+            margin-top: 5px;
+        }
+        &-body{
+            font-size: 12px;
+            line-height: 18px;
         }
     }
 }
