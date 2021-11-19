@@ -44,6 +44,7 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+
     <aside class="sidepanel">
         <a href="#" class="sidepanel__link">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -453,14 +454,19 @@
                             <textarea name="text" id="text"></textarea>
                             <label for="text">Ваше сообщение</label>
                         </div>
-                        <div>
+                        <div class="contacts__triggers">
                             <button class="contacts__btn btn">Отправить сообщение</button>
+                            <div class="contacts__policy">
+                                <input required type="checkbox">
+                                <span>Я согласен(а) с <a href="/policy.html">политикой конфиденциальности</a></span>
+                            </div>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </section>
+
     <script src="js/script.js"></script>
 </body>
 </html>
