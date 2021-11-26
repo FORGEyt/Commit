@@ -15,6 +15,9 @@
             grid-column: 2 / 4;
         }
     }
+    &__subtitle{
+        text-align: center;
+    }
     &__item {
         transition: all 0.6s;
         img {
