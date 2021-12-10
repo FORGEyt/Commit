@@ -1,0 +1,14 @@
+.sertificate{
+    .__wrapper{
+        padding-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(450px,auto));
+        justify-content: space-around;
+        &_img{
+            width: 450px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

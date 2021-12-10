@@ -1,7 +1,38 @@
+@media (min-width: 1439px){
+    .sertificate{
+        &__wrapper{
+            padding-top: 50px;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(auto,auto));
+            justify-content: space-between;
+            &_img{
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
 @media (max-width: 1439px) {
     .sidepanel {
         display: none;
     }
+    .sertificate{
+        &__wrapper{
+            padding-top: 50px;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(450px,auto));
+            justify-content: space-around;
+            &_img{
+                width: 450px;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
 }
 @media (max-width: 1200px) {
     .container {
@@ -207,6 +238,21 @@
             grid-template: 45px 190px 45px / repeat(2, 250px);
         }
     }
+    .sertificate{
+        &__wrapper{
+            padding-top: 50px;
+            display: grid;
+            grid-template-columns:minmax(550px,auto);
+            justify-content: space-around;
+            &_img{
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
 }
 
 @media (max-width: 576px) {
@@ -288,6 +334,48 @@
             width: 180px;
             margin: 0 auto;
             line-height: 18px;
+        }
+    }
+}
+
+@media (max-width: 425px){
+    .sertificate{
+        &__wrapper{
+            grid-template-columns: none;
+            &_img{
+                width: 400px;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 375px){
+    .sertificate{
+        &__wrapper{
+            grid-template-columns: none;
+            &_img{
+                width: 355px;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 320px){
+    .sertificate{
+        &__wrapper{
+            grid-template-columns: none;
+            &_img{
+                width: 305px;
+                img{
+                    width: 100%;
+                }
+            }
         }
     }
 }
